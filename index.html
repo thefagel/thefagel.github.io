@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStudio | Kirillchik</title>
+    
+    <!-- Подключение шрифта JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="src/style/themes.css">
+    <link rel="stylesheet" href="src/style/main.css">
+</head>
+<body class="theme-dark">
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="logo">DEV<span class="accent">STUDIO</span></div>
+        
+        <ul class="nav-links">
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Проекты</a></li>
+            <li>
+                <!-- Выпадающий список тем -->
+                <select id="theme-selector" class="theme-select">
+                    <option value="theme-dark" selected>Dark Mode</option>
+                    <option value="theme-light">Light Mode</option>
+                    <option value="theme-matrix">Matrix</option>
+                </select>
+            </li>
+        </ul>
+        
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Контент -->
+    <main>
+        <section id="hero">
+            <h1>Мы создаем <span class="typing-text">цифровые продукты</span></h1>
+            <p>Fullstack решения для вашего бизнеса.</p>
+            <button class="btn-primary">Обсудить проект</button>
+        </section>
+
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <div class="grid">
+                <div class="card">Web Development</div>
+                <div class="card">Mobile Apps</div>
+                <div class="card">UI/UX Design</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Скрипты -->
+    <script src="src/src/themes.js"></script>
+    <script src="src/src/nav.js"></script>
+</body>
+</html>
